@@ -599,7 +599,7 @@ ngx_int_t initWorkerProcess(ngx_cycle_t* cycle)
         target.ssl = mcf->ssl;
         target.trustedCert = mcf->trustedCert;
         target.clientKey = mcf->clientKey;
-        target.clientCert = mcf->clientCert
+        target.clientCert = mcf->clientCert;
         target.headers = mcf->headers;
 
         gExporter.reset(new BatchExporter(
